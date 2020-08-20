@@ -6,11 +6,19 @@ import { AppComponent } from './app.component';
 import { HttpClientModule} from '@angular/common/http';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { NavbarComponent } from './navbar/navbar.component';
+import { UserListComponent } from './user-list/user-list.component';
+import { AddUserComponent } from './add-user/add-user.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    UserListComponent,
+    AddUserComponent,
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

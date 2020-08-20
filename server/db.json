@@ -1,35 +1,7 @@
 {
   "users": [
     {
-      "name": "Rocky Kumar Darlami1",
-      "mobile": "9876543210",
-      "email": "admin@onetouch.com",
-      "pasword": "123456",
-      "id": 2
-    },
-    {
-      "name": "Max Smith",
-      "mobile": "1111111111",
-      "email": "admin@onetouch.com",
-      "pasword": "123456",
-      "id": 3
-    },
-    {
-      "name": "John Doe",
-      "mobile": "9999999999",
-      "email": "admin@onetouch.com",
-      "pasword": "123456",
-      "id": 4
-    },
-    {
-      "name": "Mahesh Kumar",
-      "mobile": "7777777777",
-      "email": "mahesh@gmail.com",
-      "pasword": "123",
-      "id": 5
-    },
-    {
-      "name": "Maxmillan",
+      "name": "Maxmillanq2",
       "mobile": "8888888888",
       "email": "max@gmail.com",
       "pasword": "123qwe",
@@ -71,13 +43,6 @@
       "id": 11
     },
     {
-      "name": "JImmy",
-      "mobile": "8888888",
-      "email": "jimmy@gmail.com",
-      "pasword": "bot2605",
-      "id": 12
-    },
-    {
       "name": "test",
       "mobile": "9876543210",
       "email": "test@gmail.com",
@@ -90,6 +55,27 @@
       "email": "admin@onetouch.com",
       "pasword": "bot2605",
       "id": 14
+    },
+    {
+      "name": "Niraj Saxena",
+      "mobile": "9876543210",
+      "email": "niraj@gmail.com",
+      "pasword": "bot2605",
+      "id": 15
+    },
+    {
+      "name": "pwd",
+      "mobile": "9832944718",
+      "email": "admin@onetouch.com",
+      "pasword": "bot2605",
+      "id": 16
+    },
+    {
+      "name": "Mahesh Kumar",
+      "mobile": "777777777711",
+      "email": "mahesh@gmail.com",
+      "pasword": "123",
+      "id": 17
     }
   ]
 }

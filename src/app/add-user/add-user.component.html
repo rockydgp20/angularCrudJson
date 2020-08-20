@@ -1,0 +1,38 @@
+<div class="alert alert-warning alert-dismissible fade show" role="alert" *ngIf="showSuccessMsg">
+    <strong>User Added Successfully!!!</strong> 
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close" (click)="closeAlert()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  
+  <div class="alert alert-success" role="alert" *ngIf="showUpdateMsg">
+    User Updated Successfully!!!
+  </div>
+  <div class="alert alert-danger" role="alert" *ngIf="showDeleteMsg">
+    User Deleted Successfully!!!
+  </div>
+  <!-- Form -->
+  <div class="container">
+    <form #myForm= "ngForm">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Full Name</label>
+        <input type="email" class="form-control" name="name" aria-describedby="emailHelp" [(ngModel)]="userObj.name">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Mobile Number</label>
+        <input type="email" class="form-control"  name="mobile" aria-describedby="emailHelp" [(ngModel)]="userObj.mobile" >
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control"  name="email" aria-describedby="emailHelp" [(ngModel)]="userObj.email" >
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" name="pasword" [(ngModel)]="userObj.pasword" >
+      </div>
+  
+      <button type="submit" class="btn btn-primary" (click)="addUser(myForm.value)" *ngIf="!isEdit">Submit</button>
+      <button type="submit" class="btn btn-primary" (click)="updateUser()" *ngIf="isEdit">Update</button>
+    </form>
+    <br>
+    </div>

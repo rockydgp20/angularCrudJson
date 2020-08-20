@@ -6,6 +6,7 @@ import { CommonService } from './common.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
   allUsers: any;
   isEdit = false;
   alert: boolean = false;
@@ -38,33 +39,28 @@ count:Number = 5;
       this.getLatestUsers();
       this.showSuccessMsg = true;
       this.alert = true;
-    })
+    });
   }
   getLatestUsers() {
     this.commonService.getAllUsers().subscribe((response) => {
       this.allUsers = response;
-    })
+    });
   }
-  deleteUser(user){
-    this.commonService.deleteUser(user).subscribe(() => {
-      this.getLatestUsers();
-      this.showDeleteMsg = true;
-      this.alert = true;
-    })
+  closeAlert() {
+    this.alert = false;
   }
-  editUser(user) {
-    this.isEdit = true;
-    this.userObj = user;
+  onEdit(event) {
+    this.userObj = event;
+  }
+  checkEdit(event) {
+    this.isEdit = event;
   }
   updateUser() {
     this.isEdit = !this.isEdit;
     this.commonService.updateUser(this.userObj).subscribe(() => {
-      this.getLatestUsers();
+      //this.getLatestUsers();
       this.showUpdateMsg = true;
       this.alert = true;
-    })
-  }
-  closeAlert(){
-    this.alert = false;
+    });
   }
 }
