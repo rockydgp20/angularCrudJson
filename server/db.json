@@ -27,6 +27,34 @@
       "email": "admin@onetouch.com",
       "pasword": "123456",
       "id": 4
+    },
+    {
+      "name": "Mahesh Kumar",
+      "mobile": "7777777777",
+      "email": "mahesh@gmail.com",
+      "pasword": "123",
+      "id": 5
+    },
+    {
+      "name": "Maxmillan",
+      "mobile": "8888888888",
+      "email": "max@gmail.com",
+      "pasword": "123qwe",
+      "id": 6
+    },
+    {
+      "name": "Andrew Smith",
+      "mobile": "99999999",
+      "email": "andrew@gmail.com",
+      "pasword": "123qwe",
+      "id": 7
+    },
+    {
+      "name": "Harish Sadu",
+      "mobile": "99999999",
+      "email": "harish@gmail.com",
+      "pasword": "bot2605",
+      "id": 8
     }
   ]
 }

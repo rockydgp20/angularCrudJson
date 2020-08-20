@@ -8,6 +8,10 @@ import { CommonService } from './common.service';
 export class AppComponent {
   allUsers: any;
   isEdit = false;
+//Pagination parameters
+p: Number = 1;
+count:Number = 5;
+
   userObj = {
     name: '',
     mobile: '',
@@ -17,6 +21,7 @@ export class AppComponent {
   }
   constructor( private commonService: CommonService) {}
   title = 'acrudjson';
+  // tslint:disable-next-line: use-lifecycle-interface
   ngOnInit() {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
     //Add 'implements OnInit' to the class.
@@ -28,13 +33,10 @@ export class AppComponent {
     this.commonService.createUser(user).subscribe((response) => {
       this.getLatestUsers();
     })
-    
   }
-  getLatestUsers(){
+  getLatestUsers() {
     this.commonService.getAllUsers().subscribe((response) => {
       this.allUsers = response;
-      console.log(response);
-      
     })
   }
   deleteUser(user){
@@ -47,12 +49,9 @@ export class AppComponent {
     this.userObj = user;
   }
   updateUser() {
-    console.log(this.userObj);
-    
     this.isEdit = !this.isEdit;
     this.commonService.updateUser(this.userObj).subscribe(() => {
       this.getLatestUsers();
-
     })
   }
 }
