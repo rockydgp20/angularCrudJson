@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "name": "John Doe",
+      "mobile": "7894561234",
+      "email": "admin@onetouch.com",
+      "pasword": "123456",
+      "id": 1
+    },
+    {
+      "name": "Rocky Kumar Darlami",
+      "mobile": "9876543210",
+      "email": "admin@onetouch.com",
+      "pasword": "123456",
+      "id": 2
+    },
+    {
+      "name": "Max Smith",
+      "mobile": "1111111111",
+      "email": "admin@onetouch.com",
+      "pasword": "123456",
+      "id": 3
+    },
+    {
+      "name": "John Doe",
+      "mobile": "9999999999",
+      "email": "admin@onetouch.com",
+      "pasword": "123456",
+      "id": 4
+    }
+  ]
+}
