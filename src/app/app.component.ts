@@ -8,6 +8,10 @@ import { CommonService } from './common.service';
 export class AppComponent {
   allUsers: any;
   isEdit = false;
+  alert: boolean = false;
+  showSuccessMsg: boolean = false;
+  showUpdateMsg: boolean = false;
+  showDeleteMsg: boolean= false;
 //Pagination parameters
 p: Number = 1;
 count:Number = 5;
@@ -32,6 +36,8 @@ count:Number = 5;
     console.log(user);
     this.commonService.createUser(user).subscribe((response) => {
       this.getLatestUsers();
+      this.showSuccessMsg = true;
+      this.alert = true;
     })
   }
   getLatestUsers() {
@@ -42,6 +48,8 @@ count:Number = 5;
   deleteUser(user){
     this.commonService.deleteUser(user).subscribe(() => {
       this.getLatestUsers();
+      this.showDeleteMsg = true;
+      this.alert = true;
     })
   }
   editUser(user) {
@@ -52,6 +60,11 @@ count:Number = 5;
     this.isEdit = !this.isEdit;
     this.commonService.updateUser(this.userObj).subscribe(() => {
       this.getLatestUsers();
+      this.showUpdateMsg = true;
+      this.alert = true;
     })
+  }
+  closeAlert(){
+    this.alert = false;
   }
 }

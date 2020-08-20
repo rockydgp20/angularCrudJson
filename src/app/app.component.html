@@ -1,5 +1,18 @@
 <app-navbar></app-navbar>  
 <br>
+<div class="alert alert-warning alert-dismissible fade show" role="alert" *ngIf="showSuccessMsg">
+  <strong>User Added Successfully!!!</strong> 
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close" (click)="closeAlert()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<div class="alert alert-success" role="alert" *ngIf="showUpdateMsg">
+  User Updated Successfully!!!
+</div>
+<div class="alert alert-danger" role="alert" *ngIf="showDeleteMsg">
+  User Deleted Successfully!!!
+</div>
 <!-- Form -->
 <div class="container">
   <form #myForm= "ngForm">
